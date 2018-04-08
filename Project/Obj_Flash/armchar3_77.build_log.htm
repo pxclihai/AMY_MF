@@ -1,0 +1,228 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: pxc Microsoft, Microsoft, LIC=NQQ63-ACLYP-HJT6M-XK6MD-BSK49-14YGF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.20
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DCM.DLL V1.13.7.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.9.0
+ 
+<h2>Project:</h2>
+F:\work\项目\魔方对接\按摩椅远程升级20180126修改投币机拉低时间\Project\amy.uvprojx
+Project File Date:  04/08/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STM32_Flash'
+compiling LED.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\BSP\LED\LED.c: 1 warning, 0 errors
+compiling api.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\API\api.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\App\stm32f10x_it.c: 1 warning, 0 errors
+compiling WatchDog.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\BSP\WatchDog\WatchDog.c: 1 warning, 0 errors
+compiling LowPrcisionTime.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\UserLib\LowPrecisionTime\LowPrcisionTime.c: 1 warning, 0 errors
+compiling IAP.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\BSP\IAP\IAP.c: 1 warning, 0 errors
+compiling GpioMap.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\BSP\GPIO\GpioMap.c: 1 warning, 0 errors
+compiling BasicFunc.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\UserLib\BasicFunc\BasicFunc.c: 1 warning, 0 errors
+compiling USART.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\BSP\USART\USART.c: 1 warning, 0 errors
+compiling CESHI.C...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\BSP\CESHI\CESHI.C: 1 warning, 0 errors
+compiling main.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\App\main.c: 1 warning, 0 errors
+compiling data.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\UserLib\data\data.c: 1 warning, 0 errors
+compiling Protocol.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\Protocol\Protocol.c: 1 warning, 0 errors
+compiling iap_updata.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\BSP\iap_updata\iap_updata.c(163): warning:  #177-D: variable "j" was declared but never referenced
+  	u16 j;
+..\BSP\iap_updata\iap_updata.c(164): warning:  #177-D: variable "data_buf" was declared but never referenced
+  	u8 data_buf[600]={0};
+..\BSP\iap_updata\iap_updata.c(366): warning:  #177-D: variable "fileLen" was declared but never referenced
+  	DWORD fileLen = iap_data.WCDMAUpdateArg.length + 	_gUpdateVal.remainSize; 
+..\BSP\iap_updata\iap_updata.c: 4 warnings, 0 errors
+compiling Spi_Flash.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\BSP\SpiFlash\Spi_Flash.c(496): warning:  #550-D: variable "byu1" was set but never used
+  	char byu1,byu2;
+..\BSP\SpiFlash\Spi_Flash.c(496): warning:  #550-D: variable "byu2" was set but never used
+  	char byu1,byu2;
+..\BSP\SpiFlash\Spi_Flash.c: 3 warnings, 0 errors
+compiling ProtocolRecCallBack.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\Protocol\ProtocolRecCallBack.c: 1 warning, 0 errors
+compiling Protocol_Debug.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\Protocol\Protocol_Debug.c: 1 warning, 0 errors
+compiling Protocol_wcdma.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\Protocol\Protocol_wcdma.c: 1 warning, 0 errors
+compiling Protocol_MSG.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\Protocol\Protocol_MSG.c: 1 warning, 0 errors
+compiling Protocol_send.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\Protocol_send\Protocol_send.c: 1 warning, 0 errors
+compiling DownLoad_Pro.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\Protocol\DownLoad\DownLoad_Pro.c: 1 warning, 0 errors
+compiling DownLoad.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\Protocol\DownLoad\DownLoad.c: 1 warning, 0 errors
+compiling nblot.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\qwl_net\NBLOT\nblot.c: 1 warning, 0 errors
+compiling g510.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\qwl_net\g510\g510.c: 1 warning, 0 errors
+compiling Uploading_Pro.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\Protocol\PostProDa\Uploading_Pro.c: 1 warning, 0 errors
+compiling M6312.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\qwl_net\gsm\M6312.c: 1 warning, 0 errors
+compiling cdma.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\qwl_net\cdma\cdma.c: 1 warning, 0 errors
+compiling PostProDa.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\Protocol\PostProDa\PostProDa.c: 1 warning, 0 errors
+compiling armchair.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\armchair\armchair.c: 1 warning, 0 errors
+compiling TM1618.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\armchair\TM1618\TM1618.c: 1 warning, 0 errors
+compiling qwl_net.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\qwl_net\qwl_net.c: 1 warning, 0 errors
+compiling 2x1278.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\armchair\433_2x1278\2x1278.c: 1 warning, 0 errors
+compiling Plug.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\mofangSDK\Plug.c: 1 warning, 0 errors
+compiling PlugSdk.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\mofangSDK\PlugSdk.c(18): warning:  #223-D: function "NewProtool" declared implicitly
+  	  NewProtool();
+..\mofangSDK\PlugSdk.c(19): warning:  #223-D: function "InitProtool" declared implicitly
+    	ret = InitProtool();
+..\mofangSDK\PlugSdk.c: 3 warnings, 0 errors
+compiling Protool.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\mofangSDK\Protool.c(187): warning:  #550-D: variable "regist_port" was set but never used
+  	int regist_port,ret;
+..\mofangSDK\Protool.c(187): warning:  #177-D: variable "ret" was declared but never referenced
+  	int regist_port,ret;
+..\mofangSDK\Protool.c: 3 warnings, 0 errors
+compiling algorithm.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\armchair\algorithm\algorithm.c: 1 warning, 0 errors
+compiling flash.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\armchair\flash\flash.c: 1 warning, 0 errors
+compiling post_protocol.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\armchair\post_protocol\post_protocol.c: 1 warning, 0 errors
+compiling amy_net.c...
+..\mofangSDK\Plug.h(8): warning:  #1295-D: Deprecated declaration mofanSDK - give arg types
+  extern int mofanSDK();
+..\armchair\amy_net\amy_net.c: 1 warning, 0 errors
+linking...
+Program Size: Code=48132 RO-data=912 RW-data=1352 ZI-data=19488  
+FromELF: creating hex file...
+".\Obj_Flash\armchar3_77.axf" - 0 Error(s), 48 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\work\项目\魔方对接\按摩椅远程升级20180126修改投币机拉低时间\Project\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
