@@ -73,7 +73,7 @@ typedef __packed union _WRData_
 
 union data  
 {  
-   unsigned long a;  
+    unsigned long a;  
     unsigned char tab[4];  
 }LONG_TO_CHAR4; 
 

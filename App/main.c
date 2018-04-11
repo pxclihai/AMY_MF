@@ -111,11 +111,11 @@ void InitSoftSystem(void)
 int main(void)  
 { 
 	/*包括串口、板载资源的硬件初始化*/		    
-    InitHardWare();		    
+  InitHardWare();		    
 	/*使用的功能模块进行配置*/
     InitSoftSystem();  
 	DEBUG("time:%s\n",__TIME__); 
-  mofanSDK();
+	
 	while (1)
 	{	
 		
@@ -172,15 +172,21 @@ int main(void)
 		//#endif
 		{
 		/*用于发送数据*/
-		API_net_data_send();
-		API_WatchDog_Feed();
+			API_net_data_send();
+			API_WatchDog_Feed();
 		}
 		
 		
-		
+		if(net.reconnect_setp==LINK_OK )
+		{
+			  mofanSDK();
+			  API_WatchDog_Feed();
+			
+		}	
+	  MF_RECV();
 		/*用于按摩椅处理*/
-		API_ARMCHAIR_DEAL();
-		API_WatchDog_Feed();
+	//API_ARMCHAIR_DEAL();
+	API_WatchDog_Feed();
 
 	}
 }

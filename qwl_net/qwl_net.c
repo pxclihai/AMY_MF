@@ -172,7 +172,7 @@ u8 net_state()
 			case LINK_OK:
 			{//net.delay_times=0;
 				
-						if(connect_flag==0)//联网时必须先发个心跳，防止心跳设置时间太久，永远连接不上
+		if(connect_flag==0)//联网时必须先发个心跳，防止心跳设置时间太久，永远连接不上
 		{
 			connect_flag=1;
 			net_error_flag=0;
@@ -390,7 +390,6 @@ u8 net_send(u8 *p,u16 len)
 	else
 	{
 		nblot_send(p,len);
-		
 	}
 
 return 0;
@@ -490,17 +489,15 @@ void net_rec(u8 k)
 {
 	//qwl_sendchar(k);
 	if(Rx<RxIn)
-		{
+	{
 			SystemBuf[Rx]=k;
  			Rx++;
-			
-		}
+	}
 		
 		if(net.mode_type ==MODE_TYPE_BC95)
 		{
 			if(net.reconnect_setp ==LINK_OK)
 			nblot_rec(k);//读NB是否有需要读取的数
-
 		}
 
 		REC_CSQ(k);

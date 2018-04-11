@@ -37,10 +37,9 @@
 ".\obj_flash\flash.o"
 ".\obj_flash\post_protocol.o"
 ".\obj_flash\algorithm.o"
-".\obj_flash\plug.o"
 ".\obj_flash\plugsdk.o"
 ".\obj_flash\protool.o"
-".\obj_flash\tcpserver.o"
+".\obj_flash\mf_common.o"
 --library_type=microlib --strict --scatter ".\Obj_Flash\armchar3_77.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

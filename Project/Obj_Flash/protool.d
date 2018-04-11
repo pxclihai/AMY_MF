@@ -65,3 +65,6 @@
 .\obj_flash\protool.o: ..\armchair\./algorithm/algorithm.h
 .\obj_flash\protool.o: ..\mofangSDK\Plug.h
 .\obj_flash\protool.o: ..\mofangSDK\Protool.h
+.\obj_flash\protool.o: ..\mofangSDK\MF_Common.h
+.\obj_flash\protool.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\obj_flash\protool.o: ..\mofangSDK\PlugSdk.h

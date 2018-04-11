@@ -1,5 +1,6 @@
 #include "config.h"
 #include "Protocol.h"
+#include "Protool.h"
 #if CONF_QWL_NET_EN	
 #define USART_FUNCTION_TYPE	 USART_FUNCTION_WCDMA		/*串口功能类型*/
 
@@ -115,9 +116,9 @@ _gProtocol.Port_Type=PORT_TYPE_WCDMA;
 static int Protocol_Receive()
 {
  	uchar chr;
-chr = ReceiveDataFromUartStruct(_gUartStruct);
-			API_net_rec(chr);	
-	
+    chr = ReceiveDataFromUartStruct(_gUartStruct);
+		  API_net_rec(chr);	//pxc net -->systembuf
+	    MF_net_rec(chr);
 	if(_gProtocol.Port_Type==PORT_TYPE_WCDMA) //端口为串口方式
 	{
 
@@ -125,7 +126,7 @@ chr = ReceiveDataFromUartStruct(_gUartStruct);
 			||(_gProtocol.ResState==RESOURCE_USE_STATUS_RECEIVE))
 		{
 			
-			_gProtocol.Mode_Type =net.mode_type ;
+			_gProtocol.Mode_Type = net.mode_type ;
 			if(net.reconnect_setp==LINK_OK)
 			_gProtocol.Connect_State =CONNECT_STATE_OK;
 			else if(net.reconnect_setp<4)
@@ -134,7 +135,7 @@ chr = ReceiveDataFromUartStruct(_gUartStruct);
 			_gProtocol.Connect_State =CONNECT_STATE_NONE;
 			
 		    chr = ReceiveDataFromUartStruct(_gUartStruct);
-
+            //pxc 
 			DoProtocolReceiveAnalysis(&_gProtocol,chr);
         }
 	}

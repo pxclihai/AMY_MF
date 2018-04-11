@@ -65,3 +65,5 @@
 .\obj_flash\plugsdk.o: ..\mofangSDK\Plug.h
 .\obj_flash\plugsdk.o: ..\mofangSDK\Protool.h
 .\obj_flash\plugsdk.o: ..\mofangSDK\TcpServer.h
+.\obj_flash\plugsdk.o: ..\mofangSDK\MF_Common.h
+.\obj_flash\plugsdk.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h

@@ -364,7 +364,7 @@ static PROTOCOL_TYPE CheckProtocolType(ProtocolResource *Protocol)
 	{
 		int RHIndex = 0; 
 		uchar RHLenth = _gProtocol_info[index].RHLenth;	//头字节的长度
-		uchar minLen = Protocol->RxPro_Lenth > RHLenth?RHLenth:Protocol->RxPro_Lenth;	//取两个长度的最小值，防止溢出
+		uchar minLen = Protocol->RxPro_Lenth > RHLenth ? RHLenth:Protocol->RxPro_Lenth;	//取两个长度的最小值，防止溢出
 		for(RHIndex = 0; RHIndex < minLen; RHIndex++) {
 
 			if(Protocol->PRxDaBuf[RHIndex] != _gProtocol_info[index].RHead[RHIndex])

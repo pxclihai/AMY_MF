@@ -2,7 +2,7 @@
 #ifndef _cdma_H
 #define _cdma_H
 #include "stm32f10x.h"
-
+extern u8 light_TCP_test[22];
 void cdma_init(void);
 u8 cdma_send(u8 *p,u16 len);
 void cdma_reconnect(void);

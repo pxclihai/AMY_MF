@@ -51,7 +51,7 @@ typedef enum {
 	TIMER_TYPE_QWL_TOUBIJI_DEAL, /*投币机延时函数延时函数*/
 	TIMER_TYPE_ARMCHAIR_TIME, /*按摩椅专用延时函数*/
 	TIMER_TYPE_MF_RESONSE,    /*魔方*/
-	TIMER_TYPE_MF_RECV,/*魔方*/
+	TIMER_TYPE_MF_HEARTBEEP,/*魔方*/
 	TIMER_TYPE_MAX 
 }TIMER_TYPE;
 

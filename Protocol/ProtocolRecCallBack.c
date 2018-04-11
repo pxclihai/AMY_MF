@@ -12,9 +12,8 @@ int ReceivePro_Debug_Dispose(USART_FUNCTION uf,PROTOCOL_TYPE Pro_Type,uchar* buf
 	switch(Pro_Type)
 	{
 		case PROTOCOL_TYPE_POSTS:	 //邮电部协议
-			//DealPostProtocol(uf,buffer,size);
-			//没找到入口 先这样代替pxc
-			DealMfPro(uf,buffer,size);
+			DealPostProtocol(uf,buffer,size);
+		
 			break;
 		case PROTOCOL_TYPE_COMPANY:	 //公司协议							   	
 			break;
@@ -22,9 +21,8 @@ int ReceivePro_Debug_Dispose(USART_FUNCTION uf,PROTOCOL_TYPE Pro_Type,uchar* buf
 			DownLoad_DealProtocol(uf,buffer,size);
 			break;
 		case PROTOCOL_TYPE_MF://无用pxc
-			DealMfPro(uf,buffer,size);
+			//DealMfPro(uf,buffer,size);
 		default:break;
-
 	}
 	
 	API_ResetProtocolBuffer(uf,RESETRTBUFF_TYPE_RX);
